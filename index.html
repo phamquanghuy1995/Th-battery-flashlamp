@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="adam-eva.js"></script>
+<script>
+    let adam=new Human("Adam","Male",60)
+    let eva=new Human("eva","FeMale",60)
+    let apple1=new Apple(10)
+    let apple2=new Apple(10)
+    for(i=1;i<=5;i++){
+        adam.eat(apple1)
+        eva.eat(apple2)
+    }
+    document.write("khối lượng của adam là:"+ adam.weight)
+    document.write("<br>")
+    document.write("khối lượng táo của adam ăn là : "+apple1.weight)
+    document.write("<br>")
+    if(adam.checkApple(apple1)===true){
+        adam.say("đã ăn hết táo")
+    }else {
+        adam.say("chưa ăn hết táo")
+    }
+
+
+</script>
+</body>
+</html>
